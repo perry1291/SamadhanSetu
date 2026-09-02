@@ -1,288 +1,303 @@
-# SamadhanSetu Citizens
+# SamadhanSetu 🇮🇳
 
-Build a government-grade AI-powered Citizen Grievance Redressal Platform called "SamadhanSetu" for India, based on SIH26-S02.
+### AI-Powered Citizen Grievance Redressal Platform
 
-IMPORTANT:
+SamadhanSetu is a modern, AI-powered citizen grievance redressal platform designed to streamline the process of submitting, managing, routing, and resolving public complaints.
 
-Focus primarily on creating a polished, realistic UI/UX and complete application structure. Use realistic mock data for now. Do NOT over-engineer the backend or implement complex ML infrastructure yet. AI/ML features should be represented through clean placeholder functions that can be connected later.
+The platform focuses on improving **transparency, accountability, department-wise ownership, and citizen accessibility** through an intuitive interface for citizens and government officials.
 
-The platform must feel like an actual Government of India / state government grievance system, not a generic hackathon dashboard.
+---
 
-CORE WORKFLOW:
+## 🌐 Project Overview
 
-Citizen Complaint
+Traditional grievance systems can often involve delayed responses, incorrect department routing, duplicate complaints, and limited visibility into the resolution process.
 
-→ AI Classification
+SamadhanSetu addresses these challenges through an intelligent grievance-management workflow:
 
-→ Department Routing
+**Submit Complaint → AI Analysis → Department Routing → Priority Assessment → Officer Action → Resolution → Citizen Tracking**
 
-→ Priority Assessment
+The project is designed around realistic Indian government administrative workflows and provides separate interfaces for citizens, department officers, and administrators.
 
-→ Duplicate Detection
+---
 
-→ Officer Action
+## ✨ Key Features
 
-→ Resolution
+### 👤 Citizen Portal
 
-→ Citizen Tracking
+- Submit grievances with location and contact details
+- Upload supporting evidence
+- AI-assisted complaint analysis
+- Suggested department and priority level
+- Duplicate complaint detection
+- Unique Grievance ID generation
+- Real-time grievance status tracking
+- Complaint history dashboard
+- Resolution details and citizen feedback
+- Appeal or "Not Satisfied" option
 
-ROLES:
+### 🏛️ Government Officer Dashboard
 
-1. CITIZEN
+- Centralized grievance management
+- Priority-based complaint queue
+- High-priority and SLA monitoring
+- Department-wise complaint assignment
+- Officer assignment and escalation
+- Internal notes and activity tracking
+- Resolution evidence management
+- Complete grievance audit timeline
 
-2. DEPARTMENT OFFICER
+### 🤖 AI-Assisted Workflow
 
-3. ADMIN / SUPERVISOR
+The application structure includes modular integration points for future AI capabilities such as:
 
-CITIZEN PORTAL:
+- Complaint classification
+- Department recommendation
+- Priority assessment
+- Duplicate complaint detection
+- Similarity analysis
+- AI-generated reasoning and recommendations
 
-1. Landing Page
+> Currently, AI functionality uses structured placeholder logic and realistic mock data, allowing real AI/ML models to be integrated in the future.
 
-- "Your Voice, Our Action"
-
-- File Complaint CTA
-
-- Key statistics: complaints received, resolved, departments
-
-- Simple 4-step process: Submit → Analyze → Route → Resolve
-
-- Government-style trustworthy visual design
-
-2. File Complaint
-
-- Name, mobile number, email
-
-- Preferred language
-
-- Complaint title and description
-
-- Location/address and pincode
-
-- Optional image upload
-
-- AI analysis preview showing:
-
-  - Suggested department
-
-  - Priority: High / Medium / Low
-
-  - Confidence
-
-  - Brief reasoning
-
-  - Possible duplicate complaint
-
-- Citizen can review/edit AI suggestions before submission
-
-- Generate a unique Grievance ID after submission
-
-3. Track Complaint
-
-- Search using Grievance ID + mobile number
-
-- Clear status timeline:
-
-  Submitted → Under Review → Assigned → In Progress → Resolved → Closed
-
-- Assigned department/officer
-
-- Complaint location
-
-- Resolution details
-
-- Download acknowledgment
-
-4. Citizen Dashboard
-
-- My complaints
-
-- Active / Resolved filters
-
-- Status, priority and department
-
-- View details
-
-- Appeal / "Not Satisfied" option
-
-OFFICER / GOVERNMENT DASHBOARD:
-
-Create a professional administrative dashboard designed around accountability and workload management.
-
-Dashboard:
-
-- Total complaints
-
-- Pending complaints
-
-- High-priority complaints
-
-- Complaints approaching SLA
-
-- Resolution rate
-
-- Average resolution time
-
-Priority Queue:
-
-- High / Medium / Low tabs
-
-- Complaint ID
-
-- Subject
-
-- Department
-
-- Location
-
-- Priority
-
-- Days pending
-
-- Current status
-
-- Actions: View / Assign / Escalate / Resolve
-
-Grievance Detail:
-
-- Complete complaint information
-
-- Citizen information
-
-- Location/map
-
-- Uploaded evidence
-
-- AI classification and reasoning
-
-- Duplicate/related complaints
-
-- Status update
-
-- Assign officer
-
-- Internal notes
-
-- Resolution evidence
-
-- Complete activity/audit timeline
-
-DUPLICATE DETECTION:
-
-Create a dedicated page showing AI-suggested duplicate complaints with:
-
-- Similarity percentage
-
-- Primary complaint
-
-- Related complaints
-
-- Side-by-side comparison
-
-- Merge / Mark Unique actions
-
-GIS / HOTSPOT VIEW:
-
-Create a full-screen map showing complaint density across an area.
-
-Include:
-
-- Complaint clusters
-
-- Department filter
-
-- Priority filter
-
-- Date filter
-
-- Pincode/area search
-
-- Complaint count per cluster
-
-- Clickable complaint details
-
-ANALYTICS:
+### 📊 Analytics & Monitoring
 
 - Complaints by department
-
 - Priority distribution
-
 - Resolution trends
-
 - Average resolution time
+- SLA compliance monitoring
+- Top complaint locations and pincodes
 
-- Top complaint locations/pincodes
+### 🗺️ GIS & Complaint Hotspots
 
-- SLA compliance
+- Complaint density visualization
+- Location-based complaint clusters
+- Department and priority filters
+- Area and pincode search
+- Interactive complaint information
 
-DESIGN DIRECTION:
+---
 
-Make it look like a serious Indian government digital service:
+## 👥 User Roles
 
-- Clean, institutional and trustworthy
+### Citizen
 
-- Blue as primary color with restrained saffron/orange accents
+Citizens can:
 
-- Excellent typography and spacing
+- Register and access their dashboard
+- File grievances
+- Track complaint progress
+- View resolution details
+- Provide feedback or raise an appeal
 
-- Accessible and mobile responsive
+### Department Officer
 
-- Clear status and priority indicators
+Officers can:
 
-- Avoid excessive gradients, glassmorphism, neon colors or flashy startup aesthetics
+- View assigned grievances
+- Manage complaint queues
+- Update grievance status
+- Add internal notes
+- Upload resolution evidence
+- Escalate or resolve complaints
 
-- Use Indian administrative terminology where appropriate
+### Administrator / Supervisor
 
-- Include realistic Indian names, locations, pincodes, departments and grievance IDs in mock data
+Administrators can:
 
-- Design for both mobile citizens and desktop government officers
+- Monitor grievance performance
+- Manage departments and officers
+- Track SLA compliance
+- Analyze complaint trends
+- Identify duplicate and related grievances
 
-- Include proper loading, empty, error and success states
+---
 
-IMPORTANT PRODUCT PRINCIPLES:
+## 🛠️ Tech Stack
 
-The system should emphasize:
+### Frontend
 
-- Citizen accessibility
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Modern component-based UI architecture
 
-- Transparency
+### Backend
 
-- Accountability
+- Node.js
+- Express.js
+- TypeScript
 
-- Department-wise ownership
+### Database & Services
 
-- SLA monitoring
+The project structure includes modular service layers designed for future integration with:
 
-- Audit trails
+- MongoDB
+- Cloudinary
+- Groq AI
+- WhatsApp API
 
-- Evidence-backed decisions
+### AI/ML Integration Points
 
-- Privacy of citizen information
+Future implementations can integrate:
 
-- Accessibility and multilingual readiness
+- Natural Language Processing (NLP)
+- Machine Learning classification models
+- Text embeddings
+- Vector databases
+- Semantic similarity detection
+- Large Language Models (LLMs)
 
-Create all major pages, navigation, reusable components, realistic mock data and complete user flows.
+---
 
-For now, prioritize FRONTEND UI, UX, navigation and application structure over actual backend/AI implementation. Keep AI integration points modular so real classification, prioritization, embeddings and duplicate detection can be connected later.
+## 📁 Project Structure
 
-Do not add unnecessary features beyond the grievance-management workflow.
+```text
+SamadhanSetu/
+│
+├── public/                 # Static assets
+├── src/                    # Frontend application
+│   ├── components/         # Reusable UI components
+│   ├── routes/             # Application pages and routes
+│   ├── lib/                # Utility and service modules
+│   └── styles.css          # Global styling
+│
+├── server/                 # Backend application
+│   └── src/
+│       ├── middleware/     # Authentication and middleware
+│       ├── models/         # Database models
+│       ├── routes/         # API routes
+│       ├── services/       # Business logic
+│       └── lib/            # Server-side utilities
+│
+├── .env.example            # Environment variable template
+├── package.json
+└── vite.config.ts
+````
 
-This project was built with [Lovable](https://lovable.dev).
+---
 
-## Build with Lovable
+## 🔄 Core Grievance Workflow
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/374bda74-d87c-43f9-aa39-b39f6b1581b2).
+```text
+Citizen Complaint
+       ↓
+AI Classification
+       ↓
+Department Routing
+       ↓
+Priority Assessment
+       ↓
+Duplicate Detection
+       ↓
+Officer Assignment
+       ↓
+Investigation & Action
+       ↓
+Resolution
+       ↓
+Citizen Feedback & Closure
+```
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## 🎯 Project Highlights
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+* Government-oriented UI/UX design
+* Realistic Indian administrative workflows
+* Multi-role application architecture
+* Modular frontend and backend structure
+* AI-ready service architecture
+* SLA and accountability-focused dashboards
+* Privacy-conscious grievance management
+* Responsive design for citizens and government officials
+* Realistic mock data for demonstration
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/perry1291/SamadhanSetu.git
+```
+
+### Navigate to the Project
+
+```bash
+cd SamadhanSetu
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
 npm run dev
 ```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env.local` file based on `.env.example`.
+
+Example:
+
+```env
+MONGO_URI_SIH=your_mongodb_connection_string
+GROQ_API_KEY=your_groq_api_key
+
+META_WHATSAPP_TOKEN=your_meta_whatsapp_token
+META_PHONE_NUMBER_ID=your_phone_number_id
+META_TEMPLATE_NAME=your_template_name
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+JWT_SECRET=your_secure_jwt_secret
+```
+
+> Never commit `.env.local` or other files containing sensitive credentials to GitHub.
+
+---
+
+## 🔮 Future Improvements
+
+* Integration with real government department APIs
+* Production-ready AI classification models
+* Semantic duplicate detection using embeddings
+* Real-time notifications
+* WhatsApp grievance updates
+* Multilingual complaint processing
+* Advanced GIS analytics
+* Role-based authentication
+* Automated SLA escalation
+* Production database integration
+
+---
+
+## 📸 Project Purpose
+
+SamadhanSetu was developed as a portfolio and problem-solving project inspired by the need for more efficient, transparent, and citizen-centric grievance redressal systems.
+
+The project demonstrates skills in:
+
+* Full-Stack Development
+* React and TypeScript
+* Backend Architecture
+* REST API Design
+* UI/UX Design
+* AI Application Architecture
+* Authentication and Role-Based Systems
+* Database and Cloud Service Integration
+
+---
+
