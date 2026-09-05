@@ -296,5 +296,3 @@ The project demonstrates skills in:
 * AI Application Architecture
 * Authentication and Role-Based Systems
 * Database and Cloud Service Integration
-
----
