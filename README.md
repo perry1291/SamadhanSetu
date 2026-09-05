@@ -2,9 +2,7 @@
 
 ### AI-Powered Citizen Grievance Redressal Platform
 
-SamadhanSetu is a modern, AI-powered citizen grievance redressal platform designed to streamline the process of submitting, managing, routing, and resolving public complaints.
-
-The platform focuses on improving **transparency, accountability, department-wise ownership, and citizen accessibility** through an intuitive interface for citizens and government officials.
+SamadhanSetu is a modern, AI-powered citizen grievance redressal platform designed to streamline the process of submitting, managing, routing, and resolving public complaints. The platform focuses on improving **transparency, accountability, department-wise ownership, and citizen accessibility** through an intuitive interface for citizens and government officials.
 
 ---
 
@@ -300,4 +298,3 @@ The project demonstrates skills in:
 * Database and Cloud Service Integration
 
 ---
-
