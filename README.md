@@ -285,9 +285,7 @@ JWT_SECRET=your_secure_jwt_secret
 ## 📸 Project Purpose
 
 SamadhanSetu was developed as a portfolio and problem-solving project inspired by the need for more efficient, transparent, and citizen-centric grievance redressal systems.
-
 The project demonstrates skills in:
-
 * Full-Stack Development
 * React and TypeScript
 * Backend Architecture
